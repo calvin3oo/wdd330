@@ -14,7 +14,7 @@
   "author": "Shane Thompson",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.12.8",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@snowpack/plugin-sass": "^1.1.2",
@@ -36,5 +36,14 @@
     "last 3 opera versions",
     "last 3 ios_saf versions",
     "last 3 safari versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvin3oo/wdd330.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/calvin3oo/wdd330/issues"
+  },
+  "homepage": "https://github.com/calvin3oo/wdd330#readme"
 }
