@@ -2,8 +2,9 @@ function setLocalStorage(key, data) {
     localStorage.setItem(key, JSON.stringify(data));
 }
 function addToLocalStorage(key, data) {
-    localStorage.getItem(key);
-    localStorage.setItem(key, JSON.stringify(data));
+    var tempProducts = JSON.parse(localStorage.getItem(key)) || [];
+    tempProducts.push(data); 
+    setLocalStorage(key, tempProducts);
 }
 
 export default class productData{
@@ -23,7 +24,7 @@ export default class productData{
         this.dataSource = dataSource;
     }
     addToCart() {
-        setLocalStorage('so-cart', this.product);
+        addToLocalStorage('so-cart', this.product);
     }
     renderProductDetails(){
         return `<section class="product-detail"> <h3>${this.product.Brand.Name}</h3>
